@@ -75,6 +75,8 @@
         .symbol{
             font-size: 50px;
             margin: 0px;
+            vertical-align: middle;
+            will-change: contents;
         }
 
     </style>
@@ -84,12 +86,12 @@
     <div class="main-container">
         <div class="nomer">
             <div class="left-part">
-                <h1 class="symbol" id="l1"></h1>
-                <h1 class="symbol" id="n2"></h1>
-                <h1 class="symbol" id="n3"></h1>
-                <h1 class="symbol" id="n4"></h1>
-                <h1 class="symbol" id="l5"></h1>
-                <h1 class="symbol" id="l6"></h1>
+                <span class="symbol" id="l1"></span>
+                <span class="symbol" id="n2"></span>
+                <span class="symbol" id="n3"></span>
+                <span class="symbol" id="n4"></span>
+                <span class="symbol" id="l5"></span>
+                <span class="symbol" id="l6"></span>
             </div>
             <div class="right-part"></div>
         </div>
@@ -124,12 +126,12 @@
         console.log(letters[11], letters[12])
         function roll(){
 
-            l1.style.display = 'none'
-            n2.style.display = 'none'
-            n3.style.display = 'none'
-            n4.style.display = 'none'
-            l5.style.display = 'none'
-            l6.style.display = 'none'
+            l1.style.visibility = 'hidden'
+            n2.style.visibility = 'hidden'
+            n3.style.visibility = 'hidden'
+            n4.style.visibility = 'hidden'
+            l5.style.visibility = 'hidden'
+            l6.style.visibility = 'hidden'
             
             l1.innerText = letters[Math.floor(Math.random() * (11 - 0) + 0)]
             n2.innerText = numbers[Math.floor(Math.random() * (9 - 0) + 0)]
@@ -138,14 +140,14 @@
             l5.innerText = letters[Math.floor(Math.random() * (11 - 0) + 0)]
             l6.innerText = letters[Math.floor(Math.random() * (11 - 0) + 0)]
 
-            l1.style.display = ''
-            n2.style.display = ''
-            n3.style.display = ''
-            n4.style.display = ''
-            l5.style.display = ''
-            l6.style.display = ''
+            l1.style.visibility = 'visible'
+            n2.style.visibility = 'visible'
+            n3.style.visibility = 'visible'
+            n4.style.visibility = 'visible'
+            l5.style.visibility = 'visible'
+            l6.style.visibility = 'visible'
         }
     </script>
     
 </body>
-</html>
+</htmspan
